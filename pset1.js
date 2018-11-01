@@ -10,7 +10,7 @@
 class Rectangle {
         //created properties 
         constructor (length, height) {
-                this.length= length;
+                this.length= length; //this['length']=length
                 this.height=height;
         }
                 //isSquare
@@ -30,9 +30,11 @@ class Rectangle {
         } 
 }
 let shapeObject = new Rectangle(4,5) //instance of class
+let newShape= new Rectangle (4,4)
 console.log(shapeObject.calculateArea())
 console.log(shapeObject.calculatePerimeter())
 console.log (shapeObject.isSquare())
+console.log(newShape.isSquare())
 
 
 /*  2
@@ -44,6 +46,27 @@ console.log (shapeObject.isSquare())
         calculateCircumfrence() // Returns the circumfrence of the circle
 */
 
+class Circle  {
+        //created properties 
+        constructor (radius) {
+                this.radius= radius; 
+        }
+                
+         //calculations
+        calculateArea() {
+                return (3.14*this.radius**2);
+        }
+        calculateDiameter(){
+                return (2* this.radius)
+        } 
+        calculateCircumference(){
+                return (2* 3.14 * this.radius)
+        } 
+}
+let shape1 = new Circle(4) //instance of class
+console.log(shape1.calculateArea())
+console.log(shape1.calculateDiameter())
+console.log (shape1.calculateCircumference())
 
 
 /*  3
