@@ -7,7 +7,32 @@
         isSquare() // Returns true or false if this rectangle is a square or not
 */
 
+class Rectangle {
+        //created properties 
+        constructor (length, height) {
+                this.length= length;
+                this.height=height;
+        }
+                //isSquare
+        isSquare() 
+        {
+                if (this.length === this.height) 
+                {       return "true"} 
+                {      return false} 
+        }
 
+       //calculations
+        calculateArea() {
+                return this.length * this.height;
+        }
+        calculatePerimeter(){
+                return (2* this.length) + (2* this.height)
+        } 
+}
+let shapeObject = new Rectangle(4,5) //instance of class
+console.log(shapeObject.calculateArea())
+console.log(shapeObject.calculatePerimeter())
+console.log (shapeObject.isSquare())
 
 
 /*  2
