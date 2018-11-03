@@ -76,6 +76,23 @@ console.log (shape1.calculateCircumference())
         greet() // Returns the pet's special greet. Eg. "Rexy the dog said Woof!"
 */
 
+class Pet {
+        //created properties 
+        constructor (name, animal, greeting) {
+                this.name= name;
+                this.animal =animal;
+                this.greeting= greeting;
+        }
+                
+         //calculations
+         greet() {
+                // return this.name + " the " + this.animal + " said " + this.greeting;
+                return `${this.name} the ${this.animal} said ${this.greeting}`;
+            }
+        }
+        
+        const angel = new Pet('Angel', 'pit bull', 'Mr. Worldwide');
+        console.log(angel.greet())
 
 
 /*  4
@@ -90,3 +107,26 @@ console.log (shape1.calculateCircumference())
                    // John's pet Annabelle the cat said Meow!
                    // John's pet Elsie the cow said Moo!
 */
+class Person {
+        //created properties 
+        constructor (name, age, pets) {
+                this.name= name;
+                this.age =age;
+                this.pets= pets;
+        }
+                
+         //calculations
+         states(){
+                return 
+        } 
+        
+}
+
+let Rexy = new Pet (name, animal, greet)
+let dog = new Pet (name, animal, greet)
+let woof =new Pet (name, animal, greet)
+
+
+console.log(name.statesName())
+console.log(animal.animalType())
+console.log (greet.statesGreeting())
